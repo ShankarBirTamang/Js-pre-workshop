@@ -24,3 +24,17 @@ function oddCouple(arrNumbers) {
 console.log(oddCouple([1, 2, 3, 4, 5]));
 console.log(oddCouple([10, 15, 20]));
 console.log(oddCouple([2, 4, 6, 8]));
+
+/* Lokesh
+function oddCouple(arr) {
+  let result_arr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 !== 0) {
+      result_arr.push(arr[i]);
+      if (result_arr.length === 2) break;
+    }
+  }
+  return result_arr;
+}
+
+*/
