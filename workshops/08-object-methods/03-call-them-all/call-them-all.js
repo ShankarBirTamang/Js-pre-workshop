@@ -15,8 +15,7 @@ function callThemAll(myObject, myValue) {
   let result = [];
 
   for (let myMethod in myObject) {
-    if (typeof myObject[myMethod] === "function") {
-      console.log("myMethod: ", myMethod); //checkpoint
+    if (typeof myObject[myMethod] === "function") {point
       result.push(myObject[myMethod](myValue));
     }
   }
