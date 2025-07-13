@@ -7,14 +7,10 @@ let ticTacToe = {
   ],
 
   move: function (givenChar, rowNum, colNum) {
-    if (!this.board[rowNum][colNum]) {
+    if (this.board[rowNum][colNum]===null) {
       this.board[rowNum][colNum] = givenChar;
     }
-    // else {
-    //   console.log("Invalid move, spot already taken."); //checkpoint
-    //   return "Already occupied";
-    // }
-    console.log(this.board); //checkpoint
+
     return this.board;
   },
 
@@ -24,7 +20,6 @@ let ticTacToe = {
       [null, null, null],
       [null, null, null],
     ];
-    console.log(this.board);
     return this.board;
   },
 };
