@@ -8,7 +8,7 @@ function cacheSavings(myCallBackFn) {
 
   return function (argument) {
     //check if the argument is already in the cache
-    if (!(argument in cache)) {
+    if (!cache[argument])) {
       //if not, call the callback with the argument
       // and store the returned value in the cache
       let callBackResult = myCallBackFn(argument);
