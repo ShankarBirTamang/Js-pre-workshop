@@ -1,8 +1,8 @@
 // YOUR CODE BELOW
 function functionLogger(myCallBackFunction, value) {
-  console.log("Function starting.");
+
   let result = myCallBackFunction(value);
-  console.log("Function complete.");
+
   return result;
 }
 
